@@ -1,0 +1,49 @@
+{
+  "title": "Fn Shortcuts",
+  "rules": [
+    {
+      "description": "Fn + A to ApiPost",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a ApiPost ~"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Fn + L to Lock Screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "q",
+            "modifiers": [
+              "left_control",
+              "left_command"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
