@@ -1,13 +1,36 @@
 {
-  "title": "left_control : use only keyboard core area",
+  "title": "rightCmd-x apple",
   "rules": [
     {
-      "description": "left_control + sdfe to arrow keys",
+      "description": "rightCmd-x: apple internal keyboard",
       "manipulators": [
         {
           "conditions": [
             {
-              "name": "left_control pressed",
+              "name": "right_command pressed",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -30,7 +53,7 @@
         {
           "conditions": [
             {
-              "name": "left_control pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -53,7 +76,7 @@
         {
           "conditions": [
             {
-              "name": "left_control pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -76,7 +99,7 @@
         {
           "conditions": [
             {
-              "name": "left_control pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -98,7 +121,7 @@
         },
         {
           "from": {
-            "key_code": "left_control",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
                 "any"
@@ -112,7 +135,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "left_control pressed",
+                "name": "right_command pressed",
                 "value": 1
               }
             }
@@ -120,14 +143,14 @@
           "to_after_key_up": [
             {
               "set_variable": {
-                "name": "left_control pressed",
+                "name": "right_command pressed",
                 "value": 0
               }
             }
           ],
           "to_if_alone": [
             {
-              "key_code": "left_control"
+              "key_code": "right_command"
             }
           ],
           "type": "basic"

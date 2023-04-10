@@ -1,0 +1,29 @@
+{
+    "title": "fn-x",
+    "rules": [
+        {
+            "description": "fn-x",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "fn",
+                        "modifiers": {
+                            "optional": [
+                                "grave_accent_and_tilde"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "",
+                            "modifiers": [
+                                "escape"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
